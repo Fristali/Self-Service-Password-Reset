@@ -1,0 +1,9 @@
+# Filebeat config (sample, not production)
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - ../elk/sample_logs/*.json
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]

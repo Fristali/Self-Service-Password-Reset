@@ -1,0 +1,40 @@
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and sample data
+*.log
+elk/sample_logs/
+
+# SQLite database (lockout state)
+infra/lockout.sqlite3
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.swp
+
+# Secrets and environment files
+*.env
+
+# Test and build artifacts
+*.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# PowerShell DSC/Stub artifacts (if any)
+infra/*.mof
+infra/*.meta.mof

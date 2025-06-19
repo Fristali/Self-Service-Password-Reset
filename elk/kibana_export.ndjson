@@ -1,0 +1,2 @@
+{"_index":"kibana_sample","_type":"_doc","_id":"1","_score":1,"_source":{"dashboard":"Password Reset Portal","visualization":"Attempts by Status","type":"pie","field":"status"}}
+{"_index":"kibana_sample","_type":"_doc","_id":"2","_score":1,"_source":{"dashboard":"Password Reset Portal","visualization":"Attempts Over Time","type":"line","field":"timestamp"}}

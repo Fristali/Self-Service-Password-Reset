@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block title %}Password Reset Portal{% endblock %}
+{% block content %}
+    <h2>Self-Service Password Reset</h2>
+    <form method="post">
+        <label for="username">Username (Account Name)</label>
+        <input type="text" id="username" name="username" required autofocus>
+        <button type="submit">Next</button>
+    </form>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+{% endblock %}
