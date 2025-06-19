@@ -130,7 +130,7 @@ The `/scripts/real_ad_reset_password.ps1` script is provided as a ready-to-use s
 
 ## Credits
 
-- Designed and implemented by[Ali Aldhalimi.
+- Designed and implemented by Ali Aldhalimi.
 
 ---
 
