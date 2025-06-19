@@ -22,9 +22,10 @@ def test_security_questions_page(client):
 
 def test_password_policy(client):
     from app.routes import validate_password
-    assert not validate_password('short')
-    assert not validate_password('alllowercase1!')
-    assert not validate_password('ALLUPPERCASE1!')
-    assert not validate_password('NoNumber!')
-    assert not validate_password('NoSpecial1')
-    assert validate_password('Valid1!a')
+    with client.application.app_context():
+        assert not validate_password('short')
+        assert not validate_password('alllowercase1!')
+        assert not validate_password('ALLUPPERCASE1!')
+        assert not validate_password('NoNumber!')
+        assert not validate_password('NoSpecial1')
+        assert validate_password('Valid1!a')
